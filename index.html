@@ -1,8 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta http-equiv="refresh" content="0; url=login/login.html">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+
 </head>
+
 <body>
+    <!-- <main></main> -->
+    <div class="to-do-list">
+        <div class="tasks">
+            <h1 style="font-size: 2.7rem;"><span>
+                    < </span>TASKS</h1>
+            <div class="date-container">
+            </div>
+            <div class="task-container">
+            </div>
+        </div>
+        <div class="add-tasks">
+            <form>
+                <label for="task"> ADD TASK</label>
+                <input type="text" placeholder="Enter Your Task Here" id="task">
+
+                <label for="task-desc">ADD DISCRIPTION</label>
+                <textarea type="text" placeholder="Describe Your Task Here" id="task-desc" rows="6"
+                    cols="40"></textarea>
+
+                <label for="type">SELECT CATEGORY</label>
+                <select class="category" name="Category">
+                    <option value="" disabled selected>Select Category</option>
+                    <option value="Home">Home</option>
+                    <option value="Business">Business</option>
+                    <option value="Shopping">Shopping</option>
+                    <option value="Travel">Travel</option>
+                    <option value="Education">Education</option>
+                    <option value="Heath & Fitness">Health & Fitness</option>
+                    <option value="Finance">Finance</option>
+                </select>
+                <label for="date">DUE DATE</label>
+                <input type="date" id="date">
+
+                <label for="important">MARK AS IMPORTANT</label>
+                <select class="important">
+                    <option value="" disabled selected>Select</option>
+                    <option value="yes">YES</option>
+                    <option value="no">NO</option>
+                </select>
+                <button type="submit" style="background-color:#393433; color : white; align-self:self-end;">ADD</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
